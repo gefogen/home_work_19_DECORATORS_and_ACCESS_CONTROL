@@ -1,2 +1,4 @@
-PWD_HASH_SALT = b'secret here'
 PWD_HASH_ITERATIONS = 100_000
+PWD_HASH_SALT = b'secret here'
+JWT_SECRET = 'y2@op4$2z'
+JWT_ALGORITHM = 'HS256'

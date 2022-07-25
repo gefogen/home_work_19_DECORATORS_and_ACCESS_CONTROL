@@ -12,7 +12,7 @@ users_schema = UserSchema(many=True)
 
 
 @user_ns.route('/')
-class UserView(Resource):
+class UsersView(Resource):
     def get(self):
         users = user_service.get_all()
 

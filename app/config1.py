@@ -5,4 +5,3 @@ class Config:
      SQLALCHEMY_TRACK_MODIFICATIONS = False
      RESTX_JSON = {'ensure_ascii': False}
      DEBUG = True
-     SECRET = '249y823r9v8238r9u'
