@@ -9,17 +9,24 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:5000/users/6
+DELETE http://localhost:5000/users/
 Content-Type: application/json
 
 
-### Auth
+###
 
 POST http://127.0.0.1:5000/auth/
 Accept: application/json
 Content-Type: application/json
 
 {
-  "username": "olga",
-  "password": "little_pony"
+  "username": "Yura",
+  "password": "admin"
 }
+
+###
+
+GET http://127.0.0.1:5000/movies/1
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ill1cmEiLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE2NTg3Njg5MDd9.A-a23y5vuMADHzgvV91fNFhBLzrN5gkJvSuh_AwHjxg

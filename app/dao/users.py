@@ -13,7 +13,7 @@ class UserDAO:
         return self.session.query(User).get_or_404(uid)
 
     def get_by_username(self, username):
-        return self.session(User).filter(User.username == username).first()
+        return self.session.query(User).filter(User.username == username).first()
 
     def create(self, data):
         new_user = User(**data)

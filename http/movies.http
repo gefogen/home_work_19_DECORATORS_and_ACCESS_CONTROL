@@ -1,10 +1,11 @@
-POST http://localhost:5000/movies/
+POST http://localhost:5000/movies/1
 Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ill1cmEiLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE2NTg3Njg5MDd9.A-a23y5vuMADHzgvV91fNFhBLzrN5gkJvSuh_AwHjxg
 
 {
-  "title": "title",
-  "description": "description",
-  "trailer": "trailer",
+  "title": "Йелостоун",
+  "description": "Это он",
+  "trailer": "Нету",
   "year": 1222,
   "rating": 1,
   "genre_id": 1,
