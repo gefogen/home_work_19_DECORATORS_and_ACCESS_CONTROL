@@ -12,8 +12,8 @@ class UserDAO:
     def get_one(self, uid):
         return self.session.query(User).get_or_404(uid)
 
-    # def get_by_username(self, username):
-    #     return self.session(User).filter(User.username == username).first()
+    def get_by_username(self, username):
+        return self.session(User).filter(User.username == username).first()
 
     def create(self, data):
         new_user = User(**data)
@@ -27,13 +27,9 @@ class UserDAO:
     def update(self, uid, data):
         user = self.get_one(uid)
 
-        user.title = data.get('title')
-        user.description = data.get('description')
-        user.trailer = data.get('trailer')
-        user.year = data.get('year')
-        user.rating = data.get('rating')
-        user.genre_id = data.get('genre_id')
-        user.director_id = data.get('director_id')
+        user.username = data.get('username')
+        user.password = data.get('password')
+        user.role = data.get('role')
 
         db.session.add(user)
         db.session.commit()
