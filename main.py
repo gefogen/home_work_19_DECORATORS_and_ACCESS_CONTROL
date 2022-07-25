@@ -28,16 +28,6 @@ def configure_app(app: Flask):
     api.add_namespace(genre_ns)
     api.add_namespace(user_ns)
 
-# db.create_all()
-#
-# u1 = User(username="vasya", password="my_little_pony", role="user")
-# u2 = User(username="oleg", password="qwerty", role="user")
-# u3 = User(username="oleg", password="P@ssw0rd", role="admin")
-#
-# users = [u1, u2, u3]
-# db.session.add_all(users)
-# db.session.commit()
-
 
 if __name__ == '__main__':
     app = create_app(Config())
